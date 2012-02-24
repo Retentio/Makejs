@@ -20,7 +20,7 @@
  Add the submodule:
 
     $ cd /path/to/your/project
-    $ git submodule add git@github.com:Retentio/Makejs.git
+    $ git submodule add https://github.com/Retentio/Makejs.git
 
  Install dependencies:
 
