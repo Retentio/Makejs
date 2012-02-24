@@ -2,7 +2,7 @@
 # Makejs
       
   Build one js file from all of those you use.
-  This file can be minified with [uglifyjs](https://github.com/mishoo/UglifyJS)
+  This file can be minified with [uglifyjs](https://github.com/mishoo/UglifyJS). 
   Makejs is built on [node](http://nodejs.org) and with the help of [underscore](https://github.com/documentcloud/underscore.git)
   
   _Makejs is under heavy development and is initially developped for [Retentio](http://retent.io)._
