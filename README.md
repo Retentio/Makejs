@@ -29,7 +29,7 @@
 
  Configure Makejs:
 
-  Makejs configuration is easy. You have an object for each folder you want to parse. 
+  Makejs configuration is easy. You have an object for each folder you want to parse. Check the config.sample.js file.
 
     [{
       src:"src", 
