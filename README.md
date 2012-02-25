@@ -29,12 +29,12 @@
 
  Configure Makejs:
 
-  Makejs have a basic set of options.
+  Makejs configuration is easy. You have an object for each folder you want to parse. 
 
-    { 
-      src:"/src", 
+    [{
+      src:"src", 
       dest:".",
-      licence:'',
+      licence:'your licence here',
       mangle:{
         use:true,
         options:{}
@@ -44,24 +44,31 @@
         options:{}
       },
       minify_each:false,
+      extensions:{
+        minified:'min.js',
+        combined:'src.js',
+        excluded:['.min.js','.src.js'],
+        included:['.js']
+      },
       finale:{
+        name:'scripts',
         minify:true,
         src:true
-      }
-    }
+    }]
 
   
-  * src : the folder which contains your sources.
-  * dest : the folder where you want to have you combined and/or minified sources
+  * src : the folder which contains your sources. It is a relative path from Makejs to your source folder.
+  * dest : the folder where you want to have you combined and/or minified sources. It is a relative path from Makejs
   * licence : As comments are trimed after compression, you can specify a licence (or whatever) which will be add at the top of the new combined file
   * mangle : see [uglifyjs](https://github.com/mishoo/UglifyJS) doc
   * squeeze : see [uglifyjs](https://github.com/mishoo/UglifyJS) doc
   * minify_each : if true, each file will be minified separatly
-  * finale : concerns the combined file. You can get it minified or not, or both.
+  * extensions : choose the extensions you want for minified and/or combined result files. You can exclude or include extensions to parse.
+  * finale : concerns the result files. You can get it minified or not, or both and give them a name.
 
 ## Node Compatibility
 
-Only used with Node 0.6.4.
+Only used with Node 0.6.7.
 
 ## License 
 

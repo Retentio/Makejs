@@ -1,6 +1,6 @@
 {
   "name": "makejs",
-  "version": "1.0.0alpha1",
+  "version": "1.0.0",
   "description": "Compine and uglify your js files",
   "keywords": ["performance", "uglify", "frontend"],
   "repository": "git@github.com:Retentio/Makejs.git",
@@ -10,5 +10,5 @@
         "underscore" : "1.3.1"
   },
   "main": "./makejs.js",
-  "engines": { "node": "0.6.4" }
+  "engines": { "node": "0.6.7" }
 }
